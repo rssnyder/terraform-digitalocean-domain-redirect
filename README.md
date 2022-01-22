@@ -6,17 +6,17 @@ Terraform module which redirects a domain in digitalocean to another URL
 
 ```hcl
 module "music" {
-  source = "terraform-aws-modules/vpc/aws"
+  source = "github.com/rssnyder/digitalocean_domain_redirect?ref=v0.1.0"
 
-  domain = "rileysnyder.org"
+  domain    = "rileysnyder.org"
   subdomain = "music"
-  url = "https://music.youtube.com/channel/UCb4yhRr7Pucxv3lb_GgGeUg"
+  url       = "https://music.youtube.com/channel/UCb4yhRr7Pucxv3lb_GgGeUg"
 }
 ```
 
 ## How it works
 
-A duckduckgo search led to me to [this google webmasters fourm post](https://support.google.com/webmasters/thread/4547336/can-i-point-a-www-domain-name-to-my-youtube-channel?hl=en) that outlines the steps to redirect from a subdomain to an external URL.
+[redirect.name](http://redirect.name/)
 
 ## Resources
 
