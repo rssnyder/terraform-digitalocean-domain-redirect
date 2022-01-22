@@ -14,4 +14,6 @@ resource "digitalocean_record" "this-txt" {
   type   = "TXT"
   name   = "_redirect.${var.subdomain}"
   value  = "Redirects from /* to ${var.url}/*"
+
+  depends_on = [digitalocean_record.this-cname]
 }
