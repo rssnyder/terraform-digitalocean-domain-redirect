@@ -18,6 +18,8 @@ module "music" {
 
 [redirect.name](http://redirect.name/)
 
+You must specify a domain that is already registered in your digital ocean account.
+
 ## Resources
 
 | Name | Type |
