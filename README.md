@@ -14,9 +14,13 @@ module "music" {
 }
 ```
 
+Redirects [music.rileysnyder.org](http://music.rileysnyder.org) to [music.youtube.com/channel/UCb4yhRr7Pucxv3lb_GgGeUg](https://music.youtube.com/channel/UCb4yhRr7Pucxv3lb_GgGeUg)
+
 ## How it works
 
 [redirect.name](http://redirect.name/)
+
+Normally a CNAME record can only redirect to another **domain** and not a full URL with paths.
 
 You must specify a domain that is already registered in your digital ocean account.
 
